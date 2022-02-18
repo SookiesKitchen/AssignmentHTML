@@ -1,0 +1,37 @@
+body{
+	background-image:url("https://static.vecteezy.com/system/resources/previews/002/007/760/original/abstract-summer-and-spring-trendy-artistic-background-template-vector.jpg")
+}
+h1, span{
+	font-size:35px;
+	font-family:Gothic Sans;
+	color:rgba(13, 20, 95, 1);
+	background-color:rgba(196, 198, 219, 0.8);
+	text-align:center;
+	line-height:150%;
+	font-style:italic;
+}
+hr{
+	border-top: 5px dotted darkblue;
+}
+h2{
+	background-color:rgba(13, 20, 95, 1);
+	color:white;
+	line-height:120%;
+}
+section{
+	font-size:20px;
+}
+details{
+	border: 3px solid;
+	border-radius: 5px;
+	border-color: rgba(109, 29, 135, 0.8);
+	padding: 10px;
+	background-color: rgba(237, 183, 233, 0.7);
+	color:rgba(77, 19, 73, 1);
+	font-style: bold;
+}
+details > summary{
+		font-style: bold;
+		box-shadow: 1px 1px 2px rgba(77, 19, 73, 1);
+}
+	

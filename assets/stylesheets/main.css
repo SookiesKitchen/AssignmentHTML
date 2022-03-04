@@ -1,26 +1,110 @@
 body{
+	margin: 1%;
 	background-image:url("https://static.vecteezy.com/system/resources/previews/002/007/760/original/abstract-summer-and-spring-trendy-artistic-background-template-vector.jpg")
+
 }
 h1, span{
-	font-size:35px;
-	font-family:Gothic Sans;
+	font-size:300%;
+	font-family:Lucida Console;
 	color:rgba(13, 20, 95, 1);
 	background-color:rgba(196, 198, 219, 0.8);
 	text-align:center;
 	line-height:150%;
 	font-style:italic;
+	border-radius: 5px;
+	transition-property: color, background, border-radius;
+	transition-duration: 1s, .2s, 1s;
+	transition-timing-function: linear, linear, ease in;
+	transition-delay: 0s, 0s, .5s;
 }
+h1:hover{
+	background: lime;
+	border-radius: 50%;
+	color: red;
+}
+nav{
+	text-transform: uppercase;
+	text-align: center;
+
+	
+}
+
+nav a{
+	display:inline-block;
+	font-size: 150%;
+	width: 22%;
+	background: rgba(241, 209, 155, 0.8);
+	text-decoration: none;
+	border: 1px solid black;
+	transition: width .2s ease-in-out, background 0.2s linear, border-radius 1s ease-in-out;
+}
+
+a:link{
+	color:darkblue;
+	border: 1px darkgreen;
+	
+}
+
+a:visited{
+	color: darkgreen;
+}
+a:hover{
+	color:hotpink;
+	cursor: grab;
+	text-decoration-line: underline;
+	border: 1px darkgreen;
+	background: darkblue;
+	width: 30%;
+	border-radius: 10px;
+}
+	
+	
 hr{
 	border-top: 5px dotted darkblue;
+	clear: both;
+	
 }
 h2{
 	background-color:rgba(13, 20, 95, 1);
 	color:white;
 	line-height:120%;
+	font-family: Monaco;
+	margin: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
 }
 section{
 	font-size:20px;
+	display: inline-block;
+	float: left;
+	border: dashed darkblue 3px;
+	height: 350px;
+	margin-bottom: 2%;
 }
+
+.achievements{
+	float:right;
+}
+
+.achievements, footer {
+	background: rgba(235,233,249,1);
+background: -moz-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,233,249,1)), color-stop(50%, rgba(216,208,239,1)), color-stop(51%, rgba(206,199,236,1)), color-stop(100%, rgba(193,191,234,1)));
+background: -webkit-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -o-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: linear-gradient(to right, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1 );
+}
+
+.half{
+	width:48%;
+}
+.whole{
+	clear:both;
+}
+
 details{
 	border: 3px solid;
 	border-radius: 5px;
@@ -28,10 +112,36 @@ details{
 	padding: 10px;
 	background-color: rgba(237, 183, 233, 0.7);
 	color:rgba(77, 19, 73, 1);
-	font-style: bold;
-}
-details > summary{
-		font-style: bold;
-		box-shadow: 1px 1px 2px rgba(77, 19, 73, 1);
-}
+	font-style: italic;
+	margin: 5%;
+	transition: height .2s ease-in-out, width .2s ease-in-out,
 	
+}
+details:hover{
+	width: 50%;
+	height: 70%;
+	transform: translate(-2em,-2em);
+}
+summary{
+	font-family: Monaco;
+	font-weight: bold;
+	box-shadow: 1px 1px 2px rgba(77, 19, 73, 1);
+	text-transform: uppercase;
+	
+	
+}
+details>p{
+	font-style:italic;
+	
+}	
+
+footer{
+	clear: both;
+	
+}
+img{
+	width: 10%;
+	display:inline-block;
+}
+
+
